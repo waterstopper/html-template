@@ -1,0 +1,61 @@
+html[data-theme="light"] {
+    --font-size: 16px;
+    --bg-color: #ffffff;
+    --middle-color: #253092;
+    --main-color: #04010a;
+    --similar-color: #04010b;
+    --similar-bg-color: #fffafb;
+    --red: #bf3011;
+    --cherry: #fd5ff0;
+    /* --cherry: #69122d; */
+    --orange: #df8022;
+    --yellow: #e5b527;
+    --mint: #26d07e;
+    --green: #06694a;
+    --blue: #3896d4;
+    --indigo: #253092;
+    --purple: #820d7c;
+    --gray: #929292;
+    --light-gray: #d3d3d3;
+}
+
+html[data-theme="dark"] {
+    --font-size: 16px;
+    --bg-color: #282a36;
+    --middle-color: #3896d4;
+    /* --main-color: snow; */
+    --main-color: #cfcfc2;
+    --similar-color: #cfcfc3;
+    --similar-bg-color: #04010b;
+    --red: #bf3011;
+    --cherry: #fd5ff0;
+    --orange: #df8022;
+    --yellow: #e5b527;
+    --mint: #06694a;
+    --green: #26d07e;
+    --blue: #3896d4;
+    --indigo: #253092;
+    --purple: #fd5ff0;
+    --gray: #929292;
+    --light-gray: #5d5d5d;
+}
+
+a {
+    color: var(--middle-color);
+}
+
+.error {
+    color: var(--red);
+}
+
+.info {
+    color: var(--main-color);
+}
+
+.ok {
+    color: var(--green);
+}
+
+.hoverable:hover {
+    background-color: var(--light-gray);
+}
