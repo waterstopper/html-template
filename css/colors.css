@@ -17,17 +17,19 @@ html[data-theme="light"] {
     --purple: #820d7c;
     --gray: #929292;
     --light-gray: #d3d3d3;
+
+    --outline-color: var(--main-color);
 }
 
 html[data-theme="dark"] {
     --font-size: 16px;
-    --bg-color: #282a36;
-    --middle-color: #3896d4;
+    --bg-color: #000000;
+    --middle-color: #28709f;
     /* --main-color: snow; */
-    --main-color: #cfcfc2;
+    --main-color: #93938b;
     --similar-color: #cfcfc3;
     --similar-bg-color: #04010b;
-    --red: #bf3011;
+    --red: #e76a4d;
     --cherry: #fd5ff0;
     --orange: #df8022;
     --yellow: #e5b527;
@@ -36,12 +38,46 @@ html[data-theme="dark"] {
     --blue: #3896d4;
     --indigo: #253092;
     --purple: #fd5ff0;
-    --gray: #929292;
-    --light-gray: #5d5d5d;
+    --gray: #595959;
+    --light-gray: #383838;
+
+    --outline-color: var(--light-gray)
+}
+
+html {
+    color: var(--main-color);
+}
+
+
+input {
+    color: var(--main-color);
+    background-color: var(--bg-color);
+}
+
+
+input[type="checkbox"],
+input[type="radio"] {
+    accent-color: var(--middle-color);
+    background-color: var(--bg-color);
+}
+
+textarea,
+select {
+    color: var(--main-color);
+    background-color: var(--bg-color);
+}
+
+hr {
+    border: solid 1px var(--main-color);
+    border-bottom: none;
 }
 
 a {
     color: var(--middle-color);
+}
+
+a:hover {
+    color: var(--red);
 }
 
 .error {
@@ -58,4 +94,22 @@ a {
 
 .hoverable:hover {
     background-color: var(--light-gray);
+}
+
+input[type='radio']:after {
+    z-index: 2;
+    width: 1em;
+    height: 1em;
+    border-radius: 0.5em;
+    position: relative;
+    background-color: var(--light-gray);
+    outline: 2px solid var(--main-color);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+}
+
+input[type='radio']:checked:after {
+    position: relative;
+    background-color: var(--middle-color);
 }

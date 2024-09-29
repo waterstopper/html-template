@@ -1,0 +1,89 @@
+.columned {
+
+}
+
+.inline-panel {
+    vertical-align: top;
+    display: inline-block;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+fieldset,
+.inline-panel, .panel {
+    padding: 0.5em;
+    border: 1px solid var(--light-gray);
+    border-radius: 0.5em;
+    margin: 0.5em;
+    margin-top: 0;
+}
+
+input[type="submit"],
+button {
+    padding: 0.1em 0.4em;
+    margin: 0;
+    font-size: 100%;
+    white-space: break-spaces;
+    color: var(--main-color);
+    background-color: var(--light-gray);
+    outline: 1px solid var(--gray);
+    border-radius: 0.5em;
+    border: 0px;
+    font-family: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 0;
+}
+
+p {
+    margin-top: 0;
+}
+
+select,
+textarea,
+input[type="url"],
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    outline: none;
+    border: 1px solid var(--outline-color);
+    border-radius: 3px;
+}
+
+input[type="submit"]:hover,
+button:hover {
+    cursor: pointer;
+    outline: 1px solid var(--main-color);
+}
+
+/* PAGE STRUCTURE */
+select,
+input,
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+footer {
+    background-color: var(--light-gray);
+}
+
+/* TABLES */
+th, td {
+    border: 1px solid var(--main-color);
+    border-radius: 0.5em;
+}
+
+table {
+    border-collapse: collapse;
+}
